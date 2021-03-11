@@ -11,8 +11,6 @@
       <div class="progress-bar" id="bar"></div>
     </div>
     <div class="content">
-      <!-- Insérez ici du Lorem Ipsum -->
-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend
       lacus eu varius venenatis. Fusce placerat tortor nec leo viverra, ac
       sodales tellus vestibulum. Pellentesque malesuada leo vitae sapien
@@ -691,22 +689,5 @@
       senectus et netus et malesuada fames ac turpis egestas.
     </div>
     <script type="text/javascript" src="main.js"></script>
-    <script>
-      //Hauteur de ma div
-      console.log(document.documentElement.scrollHeight)
-      //Hauteur affichage
-      console.log(document.documentElement.clientHeight)
-      window.onscroll = function () { scrollIndicator() };
-      function scrollIndicator() {
-          //La chauteur de ma div
-          var hauteurDocument = document.documentElement.scrollHeight - document.documentElement.clientHeight
-          //De combien je pixel j'ai scrollé
-          var deCombienJeSuisDescendu = document.documentElement.scrollTop
-          //Calcul du ratio
-          var scroll = (deCombienJeSuisDescendu / hauteurDocument) * 100
-          document.getElementById("bar").style.width = scroll + "%"
-      }
-  </script>
-  
   </body>
 </html>
